@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    /*Para a imagem pegar o fundo todo da tela */
+    display: flex;
+    /* Para centralizar e poder usar as propiredades abaixo "justiy" e "align-items"*/
+    justify-content: center;
+    /*Centraliza na vetical*/
+    align-items: center;
+    /*Centraliza na vetical*/
+    min-height: 100vh;
+    /*Para o body pegar a tela toda e deixar no centro da tela*/
+}
+
+.container {
+
+    padding: 10px;
+    background-color: #868484;
+    border-radius: 10px;
+    display: flex;
+    /*Por padrão deixa um ao lado do outro*/
+    flex-direction: column;
+    /*Define se quer alinhado em linha "row" ou colunas "column"*/
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttons {
+    margin: 10px 0;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    padding: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#PEDRA {
+    background-color: #a200ff;
+}
+
+#PAPEL {
+    background-color: #9ee01a;
+}
+
+#TESOURA {
+    background-color: #7dbeed;
+    font-size: 67px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: white;
+}
+
+.result {
+    background-color: rgb(6, 5, 109);
+}
+
+.your-score span {
+    color: rgb(44, 245, 17);
+}
+
+.your-score .motive {
+    color: white;
+}
+
+.machine-score span {
+    color: rgba(0, 0, 0, 0.986);
+}
+
+.machine-score {
+    color: white;
+}
+
+.reset {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
